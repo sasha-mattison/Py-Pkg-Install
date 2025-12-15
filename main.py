@@ -20,6 +20,6 @@ def exec_on_os():
 exec_on_os()
 
 if os == "Linux":
-    subprocess.run(linux)
+    subprocess.run(linux.py)
 else:
     subprocess.run(macos.py)

@@ -1,5 +1,4 @@
 import subprocess
-import platform
 import shutil
 
 #Package list goes like so: Basic, Advanced, Developer
