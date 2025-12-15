@@ -39,3 +39,7 @@ Commit 6
 
 Commit 7
 - Added framework for curl and clone commands on MacOS
+
+Commit 8
+- Fixed MAJOR bugs found on Linux based systems
+- Fixed linking of `main.py` to other executables
