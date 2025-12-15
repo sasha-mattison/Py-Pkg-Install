@@ -23,6 +23,7 @@ def find_distro():
         return "Fedora"
     else:
         print("Invalid input, try again")
+        print("If you don't see your distro base it is currently not supported")
         return find_distro()
     
 distro = find_distro()
