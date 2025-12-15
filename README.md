@@ -1,6 +1,13 @@
 # Py-Pkg-Install v0.0.3
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
+# support
+MacOS support - Minimal
+Linux support - Unsupported
+Windows support - No plans to support
+Other OSes - No plans to support
+
+# Commit History
 Commit 1
 - Laid down basic framework for MacOS installation
 
