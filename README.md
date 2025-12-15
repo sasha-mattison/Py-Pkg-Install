@@ -16,3 +16,8 @@ Commit 2
 
 Commit 3
 - Added `xcode-select --install` command to developer chest
+
+Commit 4
+- Cleaned code
+- Refactored some functions
+- Made two new files called `macos.py` and `linux.py` that execute on their respective operating systems
