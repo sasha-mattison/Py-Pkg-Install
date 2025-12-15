@@ -11,7 +11,7 @@ This is a homemade tool that is meant to make installing packages on MacOS and L
 
 # Support
 MacOS support - 75%
-Linux support - 20%
+Linux support - 70%
 Windows support - No plans to support
 Other OSes (FreeBSD etc.) - No plans to support
 
