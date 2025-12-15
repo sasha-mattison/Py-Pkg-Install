@@ -100,6 +100,7 @@ exec_on_os()
 
 if os == "Linux":
     get_linux_distro()
+    print("Linux is unsuported at this time :( -- (Coming soon!)")
 else:
     prepare_macos()
     macos_chest_select_install()
