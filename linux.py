@@ -1,6 +1,6 @@
 import subprocess
 
-packages = ["fastfetch"]
+linux_packages = [["fastfetch"], ["btop"], ["htop"]]
 
 distro = None
 def run(cmd):
@@ -36,12 +36,29 @@ def package_manager():
     else:
         return "sudo dnf install "
 
+def linux_crate_select_install():
+    print("Select crate type:")
+    print("Basixc: 1")
+    print("Advanced: 2")
+    print("Developer: 3")
+    selec = str(input(">>>"))
+    if selec in ("1", "2", "3"):
+        if selec == "1":
+            install_on_linux(0)
+        elif selec == "2":
+            install_on_linux(1)
+        else:
+            install_on_linux(2)
+    else:
+        print("Invalid input, try again")
+        linux_crate_select_install()
+
 
 pack = package_manager()
 
-def installer():
+def install_on_linux(selection):
     print("Installing packages...")
-    for i in range(len(packages)):
-        run(pack + packages[i])
+    for i in range(len(linux_packages[selection])):
+        run(pack + linux_packages[selection][i])
 
-installer()
+linux_crate_select_install()

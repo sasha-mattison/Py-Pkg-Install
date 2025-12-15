@@ -32,7 +32,7 @@ def install_on_macos(selection):
     #for i in range(len(macos_repositories[selection])):
         #run(macos_repositories[selection][i])
 
-def macos_chest_select_install():
+def macos_crate_select_install():
     print("Which chest (collection of packages) would you like to install?")
     print("Basic: 1")
     print("Advanced: 2")
@@ -48,7 +48,7 @@ def macos_chest_select_install():
             run("xcode-select --install")
     else:
         print("Invalid input, try again")
-        macos_chest_select_install()
+        macos_crate_select_install()
 
 def run(cmd):
     try:
@@ -59,4 +59,4 @@ def run(cmd):
 #Program execution below
 
 prepare_macos()
-macos_chest_select_install()
+macos_crate_select_install()

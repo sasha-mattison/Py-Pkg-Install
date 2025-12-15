@@ -1,17 +1,16 @@
-# Py-Pkg-Install v0.0.8
+# Py-Pkg-Install v0.0.9
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
-# KNOWN ERRORS ON LINUX RIGHT NOW
-
 # To-Do List
+- Add packages to package lists for Linux
 - Add support for curl commands (other than homebrew)
 - Further Linux support
 - Bug check on each supported OS (currently known working on MacOS only)
 - Fix possible package install errors (e.g. if a package is unavialable, skip it)
 
 # Support
-MacOS support - 75%
-Linux support - 70%
+MacOS support - 80%
+Linux support - 80%
 Windows support - No plans to support
 Other OSes (FreeBSD etc.) - No plans to support
 
@@ -43,3 +42,6 @@ Commit 7
 Commit 8
 - Fixed MAJOR bugs found on Linux based systems
 - Fixed linking of `main.py` to other executables
+
+Commit 9
+- Refactored package installation on Linux for easy expansion
