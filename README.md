@@ -7,11 +7,11 @@ This is a homemade tool that is meant to make installing packages on MacOS and L
 - Bug check on each supported OS (currently known working on MacOS only)
 - Fix possible package install errors (e.g. if a package is unavialable, skip it)
 
-# support
-MacOS support - Minimal
-Linux support - Unsupported
+# Support
+MacOS support - 70%
+Linux support - 50%
 Windows support - No plans to support
-Other OSes - No plans to support
+Other OSes (FreeBSD etc.) - No plans to support
 
 # Commit History
 Commit 1
