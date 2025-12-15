@@ -1,4 +1,4 @@
-# Py-Pkg-Install v0.0.7
+# Py-Pkg-Install v0.0.8
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
 # KNOWN ERRORS ON LINUX RIGHT NOW
