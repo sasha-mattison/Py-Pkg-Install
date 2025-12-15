@@ -1,4 +1,4 @@
-# Py-Pkg-Install v0.0.4
+# Py-Pkg-Install v0.0.5
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
 # support
@@ -21,3 +21,7 @@ Commit 4
 - Cleaned code
 - Refactored some functions
 - Made two new files called `macos.py` and `linux.py` that execute on their respective operating systems
+
+Commit 5
+- Added full package lists for MacOS
+- Fixed bugs for MacOS installer
