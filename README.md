@@ -1,4 +1,4 @@
-# Py-Pkg-Install v0.0.6
+# Py-Pkg-Install v0.0.7
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
 # To-Do List
