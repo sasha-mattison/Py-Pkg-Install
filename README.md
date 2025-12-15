@@ -8,7 +8,7 @@ This is a homemade tool that is meant to make installing packages on MacOS and L
 - Fix possible package install errors (e.g. if a package is unavialable, skip it)
 
 # Support
-MacOS support - 70%
+MacOS support - 75%
 Linux support - 50%
 Windows support - No plans to support
 Other OSes (FreeBSD etc.) - No plans to support
@@ -34,3 +34,6 @@ Commit 5
 
 Commit 6
 - Added framework for the following Linux distros: Arch, Fedora, Debian
+
+Commit 7
+- Added framework for curl and clone commands on MacOS

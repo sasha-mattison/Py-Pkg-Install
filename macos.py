@@ -2,7 +2,9 @@ import subprocess
 import shutil
 
 #Package list goes like so: Basic, Advanced, Developer
-macos_packages = [["fastfetch", "mactop", "git"], ["fastfetch", "mactop", "btop", "git", "nvim", "kitty"], ["mactop", "fastfetch", "btop", "git", "nvim", "kitty", "nasm", "openjdk", "qemu", "vim", "zsh", "pipes-sh"]]
+macos_packages = [["fastfetch", "mactop", "git"], ["fastfetch", "mactop", "btop", "git", "nvim", "kitty", "zsh"], ["mactop", "fastfetch", "btop", "git", "nvim", "kitty", "nasm", "openjdk", "qemu", "vim", "zsh", "pipes-sh"]]
+
+#macos_repositories = [[], ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'], ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"', 'git clone https://github.com/LazyVim/starter ~/.config/nvim']]
 
 def has_brew():
     return shutil.which("brew") is not None
@@ -19,7 +21,7 @@ def prepare_macos():
         print("Homebrew is NOT installed:")
         print("Installing...")
         print("Checking user permissions...")
-        run("sudo echo 'User has adequete permissions'")
+        run("sudo echo 'User has adequate permissions'")
         run('/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"')
         run("brew update && brew upgrade")
 
@@ -27,6 +29,8 @@ def install_on_macos(selection):
     print("Installing packages...")
     for i in range(len(macos_packages[selection])):
         run("brew install " + macos_packages[selection][i])
+    #for i in range(len(macos_repositories[selection])):
+        #run(macos_repositories[selection][i])
 
 def macos_chest_select_install():
     print("Which chest (collection of packages) would you like to install?")
