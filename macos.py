@@ -3,7 +3,7 @@ import platform
 import shutil
 
 #Package list goes like so: Basic, Advanced, Developer
-macos_packages = [["fastfetch", "mactop"], ["fastfetch"], ["mactop"]]
+macos_packages = [["fastfetch", "mactop", "git"], ["fastfetch", "mactop", "btop", "git", "nvim", "kitty"], ["mactop", "fastfetch", "btop", "git", "nvim", "kitty", "nasm", "openjdk", "qemu", "vim", "zsh", "pipes-sh"]]
 
 def has_brew():
     return shutil.which("brew") is not None
@@ -37,11 +37,11 @@ def macos_chest_select_install():
     selec = str(input("Enter choice: "))
     if selec in ("1", "2", "3"):
         if selec == "1":
-            install_on_macos(1)
+            install_on_macos(0)
         elif selec == "2":
-            install_on_macos(2)
+            install_on_macos(1)
         else:
-            install_on_macos(3)
+            install_on_macos(2)
     else:
         print("Invalid input, try again")
         macos_chest_select_install()
