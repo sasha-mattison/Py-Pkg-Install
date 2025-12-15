@@ -45,6 +45,7 @@ def macos_chest_select_install():
             install_on_macos(1)
         else:
             install_on_macos(2)
+            run("xcode-select --install")
     else:
         print("Invalid input, try again")
         macos_chest_select_install()

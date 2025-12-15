@@ -1,13 +1,12 @@
 import subprocess
 import platform
-import macos
-import linux
+import sys
 
 os = platform.system()
 
 if os == "Darwin":
     os = "MacOS"
-
+    
 def exec_on_os():
     if os in ("MacOS", "Linux"):
         print("Executing on " + os + "...")
@@ -20,6 +19,6 @@ def exec_on_os():
 exec_on_os()
 
 if os == "Linux":
-    subprocess.run(linux.py)
+    subprocess.run([sys.executable, "linux.py"], check=True)
 else:
-    subprocess.run(macos.py)
+    subprocess.run([sys.executable, "macos.py"], check=True)
