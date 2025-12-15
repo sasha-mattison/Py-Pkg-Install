@@ -1,6 +1,8 @@
 # Py-Pkg-Install v0.0.7
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
+# KNOWN ERRORS ON LINUX RIGHT NOW
+
 # To-Do List
 - Add support for curl commands (other than homebrew)
 - Further Linux support
@@ -9,7 +11,7 @@ This is a homemade tool that is meant to make installing packages on MacOS and L
 
 # Support
 MacOS support - 75%
-Linux support - 50%
+Linux support - 20%
 Windows support - No plans to support
 Other OSes (FreeBSD etc.) - No plans to support
 
