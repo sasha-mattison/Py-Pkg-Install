@@ -52,6 +52,7 @@ def install_on_macos2():
 
 def install_on_macos3():
     print("Installing packages...")
+    run("xcode-select --install")
     for i in range(len(macos_packages_developer)):
         run("brew install " + macos_packages_developer[i])
 
@@ -94,8 +95,11 @@ def get_linux_distro():
 
 
 def run(cmd):
-    subprocess.run(cmd, shell=True, check=True)
-
+    try:
+        subprocess.run(cmd, shell=True, check=True)
+    except subprocess.CalledProcessError as e:
+        print(f"Ignored non-critical error: {e}")
+        
 exec_on_os()
 
 if os == "Linux":
