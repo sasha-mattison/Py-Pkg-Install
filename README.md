@@ -1,5 +1,11 @@
-# Py-Pkg-Install v0.0.5
+# Py-Pkg-Install v0.0.6
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
+
+# To-Do List
+- Add support for curl commands (other than homebrew)
+- Further Linux support
+- Bug check on each supported OS (currently known working on MacOS only)
+- Fix possible package install errors (e.g. if a package is unavialable, skip it)
 
 # support
 MacOS support - Minimal
@@ -25,3 +31,6 @@ Commit 4
 Commit 5
 - Added full package lists for MacOS
 - Fixed bugs for MacOS installer
+
+Commit 6
+- Added framework for the following Linux distros: Arch, Fedora, Debian
