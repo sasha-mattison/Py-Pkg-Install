@@ -1,4 +1,4 @@
-# Py-Pkg-Install v0.0.9
+# Py-Pkg-Install v0.1.0
 This is a homemade tool that is meant to make installing packages on MacOS and Linux easy. 
 
 # To-Do List
@@ -45,3 +45,6 @@ Commit 8
 
 Commit 9
 - Refactored package installation on Linux for easy expansion
+
+Commit 10
+- Added packages to Linux package lists
