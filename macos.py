@@ -47,6 +47,7 @@ def macos_crate_select_install():
             install_on_macos(2)
             run("xcode-select --install")
     else:
+        run("clear")
         print("Invalid input, try again")
         macos_crate_select_install()
 
