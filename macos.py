@@ -37,15 +37,18 @@ def macos_crate_select_install():
     print("Basic: 1")
     print("Advanced: 2")
     print("Developer: 3 (NOTE: may take a while)")
+    print("Exit setup: 4")
     selec = str(input("Enter choice: "))
-    if selec in ("1", "2", "3"):
+    if selec in ("1", "2", "3", "4"):
         if selec == "1":
             install_on_macos(0)
         elif selec == "2":
             install_on_macos(1)
-        else:
+        elif selec == 3:
             install_on_macos(2)
             run("xcode-select --install")
+        else:
+            exit
     else:
         run("clear")
         print("Invalid input, try again")
