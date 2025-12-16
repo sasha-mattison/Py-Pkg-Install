@@ -1,6 +1,6 @@
 import subprocess
 
-linux_packages = [["fastfetch", "btop", "git"], ["fastfetch", "btop", "git", "nvim", "zsh"], ["fastfetch", "btop", "git", "nvim", "zsh", "base-devel", "openjdk"]]
+linux_packages = [["fastfetch", "btop", "git"], ["fastfetch", "btop", "git", "nvim", "zsh"], ["fastfetch", "btop", "git", "nvim", "zsh", "openjdk"]]
 
 distro = None
 def run(cmd):

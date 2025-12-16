@@ -1,6 +1,7 @@
 import subprocess
 import platform
 import sys
+import time
 
 os = platform.system()
 
@@ -17,7 +18,7 @@ def exec_on_os():
 #Program execution below
 
 exec_on_os()
-
+time.sleep(1)
 if os == "Linux":
     subprocess.run([sys.executable, "linux.py"], check=True)
 else:
