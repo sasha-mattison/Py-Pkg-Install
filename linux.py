@@ -1,6 +1,6 @@
 import subprocess
 
-linux_packages = [["fastfetch", "btop", "git"], ["fastfetch", "btop", "git", "nvim", "zsh"], ["fastfetch", "btop", "git", "nvim", "zsh", "openjdk"]]
+linux_packages = [["fastfetch", "btop", "git", "firefox"], ["fastfetch", "btop", "git", "nvim", "zsh", "firefox", "waybar"], ["fastfetch", "btop", "git", "nvim", "zsh", "openjdk", "firefox", "waybar"]]
 
 distro = None
 def run(cmd):
@@ -14,12 +14,12 @@ def find_distro():
     print("Arch based: 1")
     print("Debian based: 2")
     print("Fedora based: 3")
-    user_input = int(input(">>> "))
-    if user_input == 1:
+    user_input = str(input(">>> "))
+    if user_input == "1":
         return "Arch"
-    elif user_input == 2:
+    elif user_input == "2":
         return "Debian"
-    elif user_input == 3:
+    elif user_input == "3":
         return "Fedora"
     else:
         print("Invalid input, try again")
