@@ -40,7 +40,7 @@ def package_manager():
 def linux_crate_select_install():
     global distro
     print("Select crate type:")
-    print("Basixc: 1")
+    print("Basic: 1")
     print("Advanced: 2")
     print("Developer: 3")
     print("Exit setup: 4")

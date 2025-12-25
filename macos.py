@@ -7,7 +7,7 @@ macos_packages = [["fastfetch", "mactop", "git"], ["fastfetch", "mactop", "btop"
 #macos_repositories = [[], ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'], ['sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"', 'git clone https://github.com/LazyVim/starter ~/.config/nvim']]
 
 def has_brew():
-    return shutil.which("brew") is not None
+    return shutil.which("brew") is not None 
 
 def prepare_macos():
     print("Checking user permissions...")
